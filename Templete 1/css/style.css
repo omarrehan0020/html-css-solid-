@@ -1,0 +1,468 @@
+*
+{
+    box-sizing: border-box ;
+}
+body
+{
+}
+
+.container
+{
+    width: 900px ;
+    margin: auto ;
+    color: #fff ;
+}
+
+
+ .slider 
+{
+   
+    background-image: url("../images/download.jpg") ;
+    -webkit-background-size: cover ;
+    -moz-background-size: cover ;
+    -o-background-size: cover ;
+    background-size: cover ;
+    
+    height: 500px ;
+    overflow: hidden ;
+    margin: 0 ;
+   
+}
+.slider .intro
+{
+
+  margin: 200px  350px ;
+  color: #FFF ;
+  
+}
+.slider button
+{
+ margin: 20px 0 100px 250px ;
+ color: #FFF ;
+ background: none ;
+ border: solid 3px  #FFF ;
+ border-radius: 0 ;
+ 
+}
+.slider h1
+{
+ padding: 10px 70px ;
+ border: solid 3px  #FFF ;
+  border-left: none ;
+    border-right:  none ;
+}
+
+ .navbar
+{
+    background: #252F31 ;
+    height: 60px ;
+    overflow: hidden ;
+    margin-top: 0 ;
+}
+.header .navbar ul li
+{
+    list-style-type:  none ;
+    padding: 10px ;
+    display: inline ;
+    float: right ;
+     margin-top: -3px ;
+ 
+    
+}
+
+.header .navbar ul li:hover,
+.header .navbar ul .active 
+{
+    color: #29794F;
+    cursor: pointer ;
+}
+.header .navbar .container h1
+{
+    float: left ;
+    margin-top: -8px ;
+    text-transform: uppercase ;
+}
+.header .navbar .container h1 span
+{
+    color: #29794F ;
+}
+.features
+{
+ margin: 70px 0 ;
+}
+.features .container > div
+{
+    width: 33.3333% ;
+    float: left ;
+}
+.features .container h1 ,
+.about .container .about_me h1,
+.skills .container .sli h1 ,
+.resume .container h1
+
+{
+    color: #555555 ;
+    
+}
+.features .container p ,
+.about .container .about_me p,
+.skills .container .sli p,
+.resume .container p
+{
+    color: #9E9E9E ;
+   
+}
+
+.features
+{
+    height: 190px ;
+    background: #FFF;
+}
+.about
+{
+    background: #F2F2F2 ;
+    overflow: hidden ;
+}
+.about .container .image
+{
+    float: left ;
+    width: 40% ;
+    margin-left: -230px ;
+}
+.about .container .about_me
+{
+    float: left ;
+    width: 60% ;
+}
+.clear
+{
+    clear: both ;
+}
+.about .container .about_me > div
+{
+    width: 50% ;
+    float: left ;
+}
+.about .container .image img
+{
+    width: 100% ;
+}
+.about_me
+{
+    margin-left: 80px ;
+    margin-top: 20px ; 
+}
+.skills
+{
+    width: 100% ;
+    background: #FFF ;
+    overflow: hidden ;
+}
+
+.skills .container .sli
+{
+    width: 50% ;
+    float: left ;
+}
+.skills .container .sli2
+{
+     width: 50% ;
+    float: left ;
+}
+.resume
+{
+     background: #F2F2F2 ;
+     padding: 30px ;
+     margin-top: 20px ;
+}
+.resume .container
+{
+   
+    text-align: center ;
+   
+}
+
+{
+    background: #DDD ;
+
+}
+.progress
+{
+    width: 500px ;
+    min-height: 25px ;
+    background: #DDD ;
+    position: relative ;
+    margin-bottom: 20px ;
+}
+.progress1
+{
+    position: absolute ;
+    top: 0 ;
+    left: 0 ;
+    width: 80% ;
+    height: 100% ;
+    background: #2DCC70 ;
+    text-align: right ;
+    padding: 3px ;
+    
+}
+.skills .container .sli2 h1
+{
+    color: #555555 ;
+    font-size: 85% ;
+    
+}
+.skills
+{
+    margin-top: 20px ;
+    margin-bottom: 20px ;
+}
+.skills input[type="button"]
+{
+    border: solid 2px #2DCC70 ;
+    background: #FFF ;
+    padding: 8px ;
+    color: #2DCC70 ;
+    cursor: pointer ;
+    margin-top: 15px ;
+}
+.resume input[type="button"]
+{
+    border: solid 2px #2DCC70 ;
+    background: #F2F2F2  ;
+    padding: 8px ;
+    cursor: pointer ;
+    color: #2DCC70 ;
+}
+.education
+{
+    overflow: hidden;
+  
+}
+.education .container .education1
+{
+    width: 50% ;
+    float: left
+}
+.education .container .education2
+{
+    width: 50% ;
+    float: left ;
+}
+.education .container .education2 span
+{
+    background: #2DCC70 ;
+    color: #FFF ;
+}
+.education .container .education2 p
+{
+    border-top: solid 2px #999999 ;
+    padding-top: 20px ;
+    
+}
+.education .container
+{
+color: #555555 ;
+}
+.final
+{
+    background: #F2F2F2 ;
+    margin-bottom: 80px ;
+}
+.final .container 
+{
+    text-align: center ;
+    color: #555555 ;
+    
+}
+.final .container p
+{
+    padding-top: 50px ;
+    font-weight: 400 ;
+    font-size: 110% ;
+    line-height: 30px ;
+    font-style: italic ;
+}
+.final ul
+{
+ list-style: none ;
+ padding: 0 ;
+ text-align: center ;
+}
+.final ul li {
+ width: 10px ;
+ height: 10px ;
+ border: solid 2px #2FB45A ;
+ display: inline-block ;
+ border-radius: 50% ;
+ margin-bottom: 50px ;
+ 
+}
+.active
+{
+ background: #2FB45A ;
+}
+.final h2
+{
+ padding: 20px ;
+}
+
+
+
+.port .container h1 ,
+.port .container p
+{
+    text-align: center ;
+    color: #555 ;
+}
+figure
+{
+    margin-top: 80px ; 
+}
+figure img
+{
+    padding: 3px ;
+    border: solid 1px #DDD ;
+    margin: 30px ;
+    box-shadow: 0 5px 4px  #DDD;
+}
+.foot
+{
+    overflow: hidden ;
+}
+.first
+{
+    background: #252F31 ;
+    overflow: hidden ;
+}
+ .first .container div
+{
+     float: left ;
+    width: 50% ;
+    
+}
+.first ul
+{
+    list-style-type: none ;
+}
+.first ul li
+{
+    padding: 5px ;
+    color: #555 ;
+    margin-left: 0 ;
+}
+.first .container div p
+{
+   color: #555 ;
+    
+}
+input[type="text"]
+{
+    margin-top: 10px ;
+    margin-bottom: 20px ;
+    width: 300px ;
+    height: 30px ;
+}
+form
+{
+   margin-top: 20px ;
+    color: #FFF ;
+    width: 50% ;
+    float: left ;
+}
+textarea
+{
+    
+    margin-bottom: 500px ;
+    width: 300px ;
+}
+:enabled
+{
+    padding: 10px ;
+    background: #4B5557;
+    border-radius: 10px ;
+}
+.first span
+{
+    font-weight: 500 ;
+    color: #FFF ;
+}
+form input[type=button]
+{
+    margin: 30px ;
+    width: 130px ;
+    height: 35px ;
+    border-radius: 0 ;
+    background: #191E22 ;
+    color: #FFF ;
+    
+}
+footer 
+{
+    overflow: hidden ;
+    background: #191E22 ;
+    height: 150px ;
+   
+}
+.copy
+{
+ width: 50% ;
+ float: left
+}
+.copy p
+{
+ color: #555 ;
+ margin-top: 50px ;
+ margin-left:  50px ;
+}
+.thank
+{
+ width: 50% ;
+ float: right ;
+}
+.thank p
+{
+ color: #555 ;
+  margin-top: 55px ;
+ margin-right:   50px ;
+ margin-bottom: 5px ;
+}
+.thank span
+{
+ color:  #7B827E ;
+
+}
+.thank span:hover
+{
+ color: #2FB45A ;
+ cursor: pointer ;
+
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: #DDD ;
+  margin-left:  -20px  ;
+  
+}
+.port img
+{
+ width: 200px ;
+ height: 200px ;
+}
+.fa:hover
+{
+  color: #2FB45A ;
+ cursor: pointer ;
+}
+.copy strong
+{
+ color: #DDD ;
+ padding-left: 50px ;
+ padding-right:  20px ;
+}
+
+
