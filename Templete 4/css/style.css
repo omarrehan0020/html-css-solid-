@@ -1,0 +1,743 @@
+body
+{
+   font-family: 'PT Sans', sans-serif;
+}
+*
+{
+   margin:  0 ;
+   padding: 0 ;
+   box-sizing: border-box ;
+   perspective: 600px ;
+}
+.pad-y
+{
+   padding: 70px 0 70px 0 ;
+}
+
+/*general
+ */
+.container
+{
+   width: 90% ;
+   margin: auto ;
+}
+a
+{
+   text-decoration: none ;
+}
+li
+{
+   display: inline-block ;
+}
+.heading
+{
+   text-align:  center ;
+}
+.title
+{
+   font-size: 35px ;
+   position: relative ;
+}
+.title:after
+{
+   position: absolute ;
+   top: 110% ;
+   left: 46% ;
+   content: "" ;
+   min-width: 7% ;
+   min-height: 2px ;
+   background: #7D716B ;
+   transition: transform .5s ;
+}
+.title:hover:after
+{
+   transform: scale(1.5,1);
+}
+/*header
+ */
+.header-content
+{
+   display: flex;
+   justify-content: space-between ;
+   align-items: center ;
+   padding: 25px 0 ;
+}
+.login,
+.navbar
+{
+   flex-grow: 0.5 ;
+   display: flex ;
+   justify-content: space-around ;
+   color: var(--subcolor) ;
+   text-transform: capitalize ;
+}
+.navbar 
+{
+   flex-grow: 2 ;
+   padding: 0 10px 0 30px ;
+}
+.navbar .link-item
+{
+   display: block ;
+   padding: 15px 20px ;
+   position: relative ;
+}
+.navbar .link-item ,
+.login li
+{
+   color: #333 ;
+   font-weight: bold ;
+}
+
+.link-item:after
+{
+   content: "" ;
+   position: absolute ;
+   border-width: 0 2px  ;
+   border-style: solid ;
+   border-color: #7b5244 ;
+   width: 97% ;
+   height: 100% ;
+   top:  0 ;
+   left: 0 ;
+   transform: scale(1,0) ;
+   transition: transform .3s ;
+}
+.link-item:hover:after
+{
+   transform: scale(1,1) ;
+}
+.link-item:before
+{
+   content: "" ;
+   position: absolute ;
+   border-width: 2px 0  ;
+   border-style: solid ;
+   border-color: #7b5244 ;
+   width: 100% ;
+   height: 93% ;
+   top:  0 ;
+   left: 0 ;
+   transform: scale(0,1) ;
+   transition: transform .3s ;
+   transition-delay: .2s ;
+}
+.link-item:hover:before
+{
+   transform: scale(1,1) ;
+}
+.login li
+{
+   padding: 1px ;
+}
+.login li:hover
+{
+   color: #7b5244 ;
+}
+.login li
+{
+   font-size: 14px;
+   cursor: pointer ;
+}
+.login li i
+{
+      font-size: 20px ;
+
+}
+
+.zero{
+   position: relative ;
+}
+.zero:after
+{
+   content: "o" ;
+   color: #FFF ;
+   position: relative ;
+   font-size: 15px ;
+   background-color: #7b5244  ;
+   border-radius: 50% ;
+   width: 10px ;
+   height: 5px ;
+   padding:  0 3px 2px  ;;
+   top: 50% ;
+   left: -4px ; ;
+}
+.dropdown
+{
+   position: relative ;
+}
+.dropdown-menu
+{
+   position: absolute ;
+    width: 400px ;
+    background: #FFF ;
+    border: solid 2px #7b5244 ;
+    top: 75px ;
+    padding-bottom: 15px ;
+    visibility: hidden ;
+    opacity: 0 ;
+    transform: scale(0) ;
+    transition: transform .5s , visibility .5s  ;
+    z-index: 10 ;
+}
+.dropdown-menu ul
+{
+   display: table-cell ;
+   padding: 20px ;
+}
+.dropdown-menu ul li
+{
+   display: block ;
+   color: rgba(0,0,0,.8);
+   line-height: 25px ;
+}
+.dropdown-menu ul li:first-child
+{
+   color: #7b5244;
+   margin-bottom: 10px ;
+   font-weight: bold ;
+   border-bottom: solid 1px #DDD  ;
+   padding-bottom:  5px ;
+}
+.dropdown-menu ul li:hover
+{
+    color: #7b5244;
+    cursor: pointer ;
+}
+.dropdown:hover .dropdown-menu
+{
+   visibility: visible ;
+   opacity: 1 ;
+   transform: scale(1) ;
+}
+
+/*main
+ */
+.main-content
+{
+   position: relative ;
+}
+.main-content ul
+{
+   position: absolute ; left: 45% ;top: 90% ;
+   text-align: center ;
+   
+  
+}
+.main-content ul li
+{
+   display: inline-block ;
+   min-height: 10px ;
+   min-width: 10px ;
+   background: #FFF ;
+   border-radius: 50% ;
+   margin: 10px ;
+   transition: background .5s ;
+}
+.main-content ul li.active
+{
+   background: #000 ;
+}
+.main-content ul li:hover
+{
+   background: #000 ;
+}
+
+/*
+ *category
+ */
+
+.item-photo
+{
+   display: block ;
+   margin-bottom: 20px ;
+   padding-left: 0;
+   transition: box-shadow .3s ;
+   width: 100% ;
+}
+.populer a{
+   padding:  20px 0 ;
+   color: #7D716B;
+}
+.collection
+{
+   display: flex ;
+   justify-content: space-between ;
+}
+.collection-item
+{
+   width: 23% ;
+}
+.collection-item:hover img
+{
+   box-shadow: 1px 1px 10px 6px #DDD ;
+}
+
+
+.collection-item h3:hover
+{
+   color: #7b5244 ;
+}
+.collection-item h3
+{
+   display: inline-block ;
+   margin-right: 10px ;
+}
+.collection-item i
+{
+   background: #7b5244 ;
+   padding: 10px ;
+   padding-left: 20px ;
+   padding-right: 20px ;
+}
+
+/*
+ *market
+ */
+ 
+ .mar
+ {
+   display: flex ;
+   transform-style: preserve-3d ;
+   perspective: 600px ;
+ }
+.market-disc
+{
+   flex-grow: 3;
+   height: 300px ;
+   background: #F7F3EF ;
+   margin-top: 25px ;
+}
+.market-disc i
+{
+   padding: 10px ;
+   float: left ;
+   width: 15% ;
+   color: #7b5244 ;
+}
+.market-disc div:first-of-type
+{
+    float: left ;
+    width: 60% ;
+    padding: 20px ;
+}
+.market-disc 
+{
+   padding: 30px ;
+   margin-right: 20px ;
+   position: relative ;
+}
+.market-disc p
+{
+   padding: 10px ;
+}
+.market-disc h5,
+.market-disc p
+{
+   margin-top: 5px ;
+   color: #B0AFAD ;
+   letter-spacing: 1.5px ;
+   line-height: 1.6 ;
+}
+.clear
+{
+   clear: left ;
+}
+.market-disc .line
+{
+  text-align: right ;
+  position: absolute ;
+  right: 30px ;
+  bottom: 35px ;
+}
+.line li a
+{
+   display: inline-block;
+   width: 50px ;
+   height: 2px ;
+   background: #B0AFAD  ;
+   margin: 10px ;
+}
+.line .active
+{
+    background:  #7b5244 ;
+}
+.line li a:hover  
+{
+     background:  #7b5244 ;
+}
+.market-item
+{
+ flex-grow: 3;
+  margin: 20px ;
+  position: relative ;
+}
+.market-item img
+{
+   width: 250px ;
+   height: 300px ;
+   transition: transform .3s ;
+}
+
+.market-item .image-content
+{
+   position: absolute ;
+   top: 30px;
+   left: 15px ;
+   transform: translatez(5px);
+}
+.image-content span
+{
+   display: block ;
+   color: #7b5244 ;
+   margin-bottom: 8px ;
+}
+.market-item:hover img
+{
+   transform: translatez(5px);
+}
+
+.sprites
+{
+   display: flex ;
+   margin: 60px  0;
+}
+.sprites-item
+{
+   flex-grow: 1 ;
+   text-align: center ;
+   border-right: solid 1px #DDD ;
+}
+.sprites-item:last-child
+{
+   border: 0 ;
+}
+.sprites-item h4
+{
+   color: #000;
+   margin: 5px  0;
+}
+.sprites-item span
+{
+   color: #888;
+}
+.sprites-icon
+{
+   margin-top: 20px ;
+   margin-left: 40% ;
+   background-image: url('../images/service-icon.png');
+   height: 60px ;
+   width: 40px ;
+   background-position: center 0;
+   text-align: center ;
+   transition: background-position .4s ;
+}
+.sprites-icon-1
+{
+    background-position: 0 0 ;
+}
+.sprites-icon-1:hover
+{
+    background-position: 0 -90px ;
+}
+.sprites-icon-2
+{
+    background-position: 0 -180px ;
+}
+.sprites-icon-2:hover
+{
+    background-position: 0 -270px ;
+}
+.sprites-icon-3
+{
+    background-position: 0 -360px ;
+}
+.sprites-icon-3:hover
+{
+    background-position: 0 -455px ;
+}
+.sprites-icon-4
+{
+    background-position: 0 -550px ;
+}
+.sprites-icon-4:hover
+{
+    background-position: 0 -640px ;
+}
+.sprites-icon-5
+{
+    background-position: 0 -733px ;
+}
+.sprites-icon-5:hover
+{
+    background-position: 0 -814px ;
+}
+
+/*
+ *products
+ */
+.avilable
+{
+   text-align: center ;
+   margin-top: -50px ;
+}
+.avilable li a
+{
+   display: inline-block;
+   padding: 30px ;
+   color: #888 ;
+}
+.avilable .active
+{
+   color: #7b5244 ;
+}
+
+.avilable li:hover a
+{
+   color: #7b5244 ;
+}
+.product-content
+{
+   display: flex ;
+   flex-wrap: wrap ;
+   justify-content: space-around ;
+}
+.product-item
+{
+   width: 300px ; ;
+   margin: 10px ;
+ 
+}
+.product-img
+{
+   position: relative ;
+}
+.product-layout
+{
+   position: absolute ;
+   top: 0 ;
+   left: 0 ;
+   transform: scaleX(0) ;
+   transition: transform .3s ;
+}
+.product-icons
+{
+   position: absolute ;
+   top: 50% ;
+   left: 50% ;
+   transform: translate(-50% ,-50%) ;
+
+  
+}
+.product-icons i
+{
+    width: 30px ;
+   height: 30px ;
+   display: inline-block ;
+   line-height: 30px ;
+    background: #000 ;
+   color: #FFF ;
+   text-align: center ;
+   opacity: 0 ;
+   visibility: hidden ;
+   transition: opacity .3s , visibility .3s ;
+}
+.product-item:hover .product-icons i
+{
+   opacity: 1;
+   visibility: visible ;
+}
+.product-item:hover .product-layout
+{
+   transform: scaleX(1) ;
+}
+.under-img li i
+{
+   color: #96960C ;
+}
+.under-img span
+{
+   display: block ;
+   margin: 5px 0 ;
+   color: #888 ;
+}
+.under-img span:hover
+{
+   color: #7b5244 ;
+   cursor: pointer ;
+}
+.before-footer .first
+{
+   display: flex ;
+}
+.video
+{
+   width: 40% ;
+   margin-bottom: -30px ;
+}
+.para
+{
+   width: 60% ;
+}
+.f
+{
+   color: #7B5244 ;
+   width: 100px ;
+}
+.f .title-1
+{
+   font-size: 30px ;
+   padding: 0 ;
+   margin: 0 ;
+}
+.f span
+{
+   display: block ;
+   width: 50% ;
+}
+.s
+{
+   float: left ;
+  margin-left: -200px ;
+  margin-top: 25px ;
+  
+}
+.s h3 a
+{
+   color: #000 ;
+   transition: color .3s ;
+}
+
+.s h3 a:hover
+{
+   color: #7B5244 ;
+}
+.para p
+{
+   padding-bottom: 100px ;
+}
+.para .line
+{
+   position: absolute ;
+   bottom: 0 ;
+}
+.photos
+{
+   display: flex ;
+   justify-content: space-around ;
+   margin: 80px 0 0 0 ;
+}
+/*footer
+ */
+footer
+{
+   background: #000000 ;
+   width: 100% ;
+}
+.all
+{
+   display: flex ;
+   justify-content: space-between ;
+   color: #FFF ;
+   margin-bottom:  0;
+}
+
+.foot
+{
+   margin: 80px 40px  ;
+}
+.footer-logo,
+footer p
+{
+   margin: 25px 0 ;
+   line-height: 1.7 ;
+   color: #888 ;
+   cursor: pointer ;
+}
+.other
+{
+   margin: 30px  0;
+   cursor: pointer ;
+}
+.one
+{
+   margin: 0 10px 0 0 ;
+}
+
+.second  li 
+{
+   display: block ;
+   width: 140px ;
+}
+.second li a
+{
+   color: #888 ;
+   line-height: 1.7 ;
+}
+.second li:first-child a,
+.fourth h3
+{
+   display: block ;
+   margin: 0 0 30px ;
+   color: #FFF ;
+   font-size: 25px ;
+   cursor: pointer ;
+}
+.fourth h3
+{
+    margin: 0 0 80px ;
+}
+.email
+{
+   position: relative ;
+}
+.email input
+{
+   width: 300px ;
+   padding: 10px 10px 10px 0 ; ;
+   background: #000 ;
+   border: 0 ;
+}
+.email .reply i
+{
+   position: absolute ;
+   right: 10px ; ;
+   top: 10px ;
+   color: #fff ;
+}
+.reply
+{
+   margin-bottom: 40px ;
+   border-bottom: solid 1px #888 ;
+}
+.footer-icons li
+{
+   margin-left: 25px ;
+   color: #888 ;
+}
+.footer-icons li:first-child
+{
+    margin-left: 0px ;
+}
+.second a:hover,
+.footer-icons li i:hover
+{
+   color: #FFF ;
+   cursor: pointer
+}
+.footer-icons li i,
+.second a
+{
+   transition: color .5s;
+}
+footer span
+{
+   display: block ;
+   color: #888 ;
+   padding: 20px 0  20px 8% ;
+}
+
+
+
+
+
