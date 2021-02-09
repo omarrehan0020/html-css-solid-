@@ -1,0 +1,865 @@
+/*
+ *common
+ *1-opacity
+ *2-container
+ *3-hover effect1
+ *4-hover effect2
+ */
+/*common*/
+.container
+{
+    width: 80%;
+    margin: auto ;
+}
+.bt
+{
+    padding: 20px ;
+    min-width: 160px ;
+    border-radius: 5px ;
+    border: 0 ;
+    cursor: pointer ;
+    font-size: 20px ;
+    transition: opacity 1s ;
+}
+.pd-y
+{
+    padding: 120px 0 ;
+}
+.clear
+{
+    clear: both ;
+}
+.bt:hover
+{
+    opacity: 0.6 ;
+}
+
+h1 ,h2,h3,h4,h5,h6
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.ltr-effect,
+.ud-effect
+{
+    position: relative ;
+}
+.ltr-effect:after,
+.ud-effect:after
+{
+    position: absolute ;
+    content: "" ;
+    width: 0 ;
+    height: 100% ;
+    top: 0 ;
+    left: 0 ;
+    background: rgba(0,0,0,.8) ;
+    transition: width .5s ,height ,.5s ;
+    z-index: -1 ;
+}
+.ud-effect:after
+{
+   width: 100% ;
+   height: 0% ;
+}
+.ud-effect:hover:after
+{
+   height: 100% ;
+}
+.ltr-effect:hover:after 
+{
+    width: 100% ;
+}
+.ltr-effect:hover .read-title
+{
+    color: #FFF ;
+}
+.ltr-effect:hover .read-disc
+{
+    color: #DDD ;
+}
+.ltr-effect:hover .offer-title
+{
+    color: #FFF ;
+}
+.ltr-effect:hover .offer-info
+{
+    color: #DDD ;
+}
+
+
+/*genearal
+ */
+*
+{
+    padding: 0 ;
+    margin:  0 ;
+    -webkit-box-sizing: border-box ;
+    box-sizing: border-box ;
+    letter-spacing: 1px ;
+    
+}
+body
+{
+    font-family: 'Varela Round', sans-serif;
+   
+
+}
+
+
+
+/*body*/
+
+/*header
+ */
+.header
+{
+    width: 100% ;
+    background: rgba(0,0,0,.6);
+    position: fixed ;
+    z-index: 10 ;
+}
+.logo
+{
+    float: left ;
+    width: 25% ;
+    margin-top: 15px ;
+}
+.logo h1
+{
+    text-transform: uppercase ;
+    color: #FFF ;
+}
+.nav
+{
+    float: left ;
+    width: 75% ;
+}
+.nav ul
+{
+    list-style: none ;
+    margin-top: 10px ;
+}
+.nav ul >li
+{
+    display: inline-block ;
+    text-align: right ;
+}
+.nav ul > li > a
+{
+    display: block ;
+    text-decoration: none ;
+    padding: 15px ;
+    color: #FFF ;
+}
+
+/*home
+ */
+.home
+{
+    background-image: url("../images/background/background1.webp");
+    background-size: cover ;
+    height: 100vh ;
+    position: relative ;
+    
+}
+.over
+{
+    background-color: rgba(0,0,0,.5);
+    position: absolute ;
+    top: 0;
+    left: 0 ;
+    width: 100% ;
+    height: 100% ;
+}
+.home-content
+{
+    position: absolute ;
+    top: 50% ;
+    left: 50% ;
+    transform: translate(-50%,-50%);
+    text-align: center ;
+}
+.home .title,
+.home .discribe
+{
+    color: #FFF ;
+    margin-bottom: 20px ;
+}
+
+.home .bt-learn
+{
+    background: #6195FF ;
+    margin-left: 6px ;
+    color: #FFF ;
+}
+.nav ul > li > a:after
+{
+    content: "" ;
+    display: block ;
+    width: 0% ;
+    height: 2px ;
+    background: #6195ff ;
+    transition: .5s ;
+    
+}
+.navv li > a.active:after
+{
+    width: 100% ;
+}
+.navv > li > a:hover:after
+{  
+    width: 100% ;  
+}
+
+.dropdown
+{
+    position: relative ;
+}
+
+.dropdown-menu
+{
+    opacity: 0 ;
+   visibility: hidden ;
+    position: absolute ;
+    width: 140px ;
+    font-size: 0 ;
+   left: -20px ;
+   padding:  0 4px  ;
+   transition: opacity .5s , visibility .5s ;
+  
+}
+.dropdown:hover .dropdown-menu
+{
+    background: #6195FF ;
+    opacity: 1 ;
+    visibility: visible;
+    font-size: 16px ;
+}
+.dropdown-menu a
+{
+    text-align: center ;
+   
+}
+
+
+
+/*about
+ */
+.heading
+{
+    text-align: center;
+    margin: 0 auto 50px auto ;
+    font-size: 25px;
+    font-weight: 900 ;  
+}
+.line
+{
+    display: block ;
+    height: 4px ;
+    width: 40px ;
+    background: #6195ff ;
+    margin: 0 auto ;
+}
+
+.read
+{
+    width: 30% ;
+    float: left ;
+    text-align: center ;
+    border: solid 1px #DDD ;
+    padding: 60px 35px ;
+    margin: 10px ;
+    position: relative ;
+}
+
+.read .icon
+{
+    color: #6195ff ;
+    margin-bottom: 20px ;
+  
+}
+.read .read-title
+{
+    margin-bottom: 20px ;
+    color: #000 ;
+}
+.read .read-disc
+{
+    margin-bottom: 20px ;
+    color: #888 ;
+}
+.read a
+{
+    text-decoration: none ;
+    color: #6195ff ;
+   
+}
+
+.featured
+{
+    background: #FAFAFA ;
+}
+.works
+{
+    overflow: hidden ;
+}
+.item
+{
+    position: relative ;
+    float: left ;
+    width: 30% ;
+    height: 300px ;
+    padding: 20px ;
+    margin-bottom: 20px ;
+}
+.item img
+{
+    width: 100% ;
+}
+
+.layout-content
+{
+    position: absolute ;
+    top: 0 ;
+    left: 0 ;
+    width: 100%;
+    height: 110% ;
+    background: rgba(0,0,0,.7) ;
+    text-align: center ;
+    opacity: 0 ;
+    visibility: hidden ;
+    transition: opacity .5s ,visibility .5s;
+}
+.item:hover .layout-content
+{
+    opacity: 1 ;
+    visibility: visible ;
+}
+.layout-content .cat
+{
+    text-transform: uppercase ;
+    color: #6195FF ;
+    display: block ;
+    margin-bottom: 10px ;
+    position: relative ;
+    top: 15px ;
+    transition: top .5s ;
+
+    
+}
+.item:hover .layout-content .cat ,
+.item:hover .layout-content i ,
+.item:hover .layout-content .content-title
+{
+    top: 0 ;
+}
+.layout-content i
+{
+    background: #6195FF ;
+    color: #FFF ;
+    padding: 12px ;
+    position: relative ;
+    top: 15px ;
+    transition: top .5s ;
+}
+.layout-content .content-title
+{
+    font-size: 25px ;
+    color: #FFF ;
+    margin-bottom: 15px ;
+    position: relative ;
+    top: 15px ;
+    transition: top .5s ;
+}
+.layout-info
+{
+    position: absolute ;
+    width: 100% ;
+    top: 50% ;
+    left: 50% ;
+    transform: translate(-50%, -50%) ;
+    
+}
+.offer-content
+{
+    overflow: hidden ;
+}
+.offer-items
+{
+    width: 30% ;
+    border: solid  1px #DDD ;
+    float: left ;
+    padding: 30px 10px 20px 10px ;
+    margin: 10px ;
+}
+
+.offer-items i
+{  
+    color: #6195FF ;
+     float: left ;
+     padding-right: 10px ;
+}
+
+.offer-items .offer-title 
+{
+    float: left ;
+    font-size: 25px ;
+    margin-bottom: 20px ;
+}
+.offer-items .offer-info
+{
+     float: left ;
+     padding-left: 37px ;
+     margin-bottom: 30px ;
+}
+.choose .heading .title
+{
+    padding-top: 30px ;
+    text-align: left ;
+}
+.choose .heading .line
+{
+   margin: 0 ;
+}
+.choose
+{
+    background: #FAFAFA ;
+    overflow: hidden ;
+}
+.choose .choose-info
+{
+    width: 50% ;
+    float: left ;
+}
+.choose-p
+{
+    color: #B2B7BF ;
+    padding-bottom: 20px ;
+   
+}
+.choose i
+{
+    color: #6195FF;
+    vertical-align: middle;
+    margin-bottom: 10px ;
+    border: solid 1px #6195FF ;
+    border-radius: 50% ;
+    padding: 5px ;
+}
+.choose span
+{
+    vertical-align: middle ;
+    color: #B2B7BF ;
+}
+.choose .choose-items
+{
+    float: left ;
+    width: 50% ;
+}
+.choose-item-img img
+{
+    width: 100% ;
+    
+}
+
+.choose .container
+{
+    padding: 100px 0  ;
+}
+.bollets
+{
+    list-style: none ;
+    text-align: center ;
+    padding-bottom: 100px ;
+    padding-top: 10px ;
+}
+.bollets li
+{
+    height: 10px ;
+    width: 10px ;
+    display: inline-block ;
+    background-color: #B2B7BF;
+    border-radius: 50% ;
+    margin: 10px ;
+}
+.bollets li.active{
+    background-color: #6195FF;
+}
+.bollets li:hover{
+    background-color: #6195FF;
+}
+
+.background
+{
+   position: relative ;
+   background-image: url('../images/background/background2.webp');
+   background-size: cover ;
+   background-attachment: fixed ;
+   height: 300px ;
+}
+.background2
+{
+    position: relative ;
+   background-image: url('../images/background/background3.webp');
+   background-size: cover ;
+   background-attachment: fixed ;
+   height: 400px ;
+}
+.numbers
+{
+   overflow: hidden ;
+   padding-top: 80px ;
+}
+.number-item
+{
+   float: left ;
+   width: 25% ;
+   text-align: center ;
+}
+.number-item i
+{
+   color: #6195FF ;
+   margin-bottom: 20px ;
+}
+.number-item-title
+{
+   font-size: 35px ;
+   color: #FFF ;
+    margin-bottom: 15px ;
+}
+.number-item-text
+{
+   color: #FFF ;
+}
+
+.prices
+{
+   overflow: hidden ;
+   margin-bottom: 50px ;
+}
+.price-item
+{
+   float: left ;
+   width: 30% ;
+   border: solid 1px #DDD ;
+   text-align: center ;
+}
+.item-plan
+{
+   display: block ;
+   margin-top: 30px ;
+   margin-bottom:  20px ;
+   text-transform: uppercase ;
+   color: #888 ;
+}
+.item-dollar
+{
+   border: solid 2px #6195FF ;
+   width: 40% ;
+   margin: auto ;
+   padding: 30px 0 ;
+   border-radius: 50% ;
+}
+.item-list
+{
+   margin: 20px ;
+   list-style: none ;
+}
+.item-list li
+{
+   padding: 8px ;
+   color: #888 ;
+}
+.item-bt
+{
+   padding: 15px ;
+   width: 170px ;
+   background: none ;
+   border: solid 2px #6195FF ;
+   margin-bottom: 25px ;
+   color: #6195FF  ;
+   font-size: 17px ;
+}
+.price-item
+{
+   margin: 15px ;
+}
+    
+.price-item:hover .item-dollar
+{
+   color: #FFF ;
+}
+.price-item:hover .item-plan
+{
+   color: #6195FF ;
+}
+.jhon
+{
+   overflow: hidden ;
+   padding: 120px 0 ;
+}
+.due
+{
+   width: 50% ;
+   float: left ;
+   padding: 10px ;
+}
+.due img
+{
+   float: left ;
+   border-radius: 50% ;
+}
+.person-discr
+{
+   float: left ;
+   margin: 20px ;
+}
+.due .name,
+.due p
+{
+   color: #FFF ;
+}
+.due .jop
+{
+   color: #6195FF ;
+}
+.due p
+{
+   letter-spacing: 0 ;
+}
+.members
+{
+   overflow: hidden ;
+}
+.member-item{
+   background: #DDD ;
+   float: left ;
+   width: 30% ;
+   margin: 10px ;
+}
+.member-item.ud-effect
+{
+   z-index: 1 ;
+}
+.member-content
+{
+   padding: 50px 20px ;
+}
+.member-content img
+{
+   width: 100% ;
+}
+.member-name
+{
+   text-align: center;
+   margin: 10px ;
+   transition: color .5s ;
+}
+.member-jop
+{
+   display: block ;
+   text-align: center;
+    color: #888 ;
+    text-transform: uppercase ;
+    transition: color .5s ;
+}
+.member-img
+{
+   position: relative
+}
+.overlay1
+{
+   position: absolute ;
+   background: rgba(0,0,0,.7) ;
+   width: 100% ;
+   height: 99% ;
+   top: 0 ;
+   opacity: 0 ;
+   visibility: hidden ;
+   
+}
+.overlay1 a
+{
+   width: 45px ;
+   display: block ;
+   color: #FFF ;
+   background: #6195FF;
+   padding: 15px ;
+  
+}
+.social
+{
+   position: absolute;
+    right:  0 ;
+   top: 0 ;
+}
+.member-item:hover .overlay1
+{
+    opacity: 1;
+   visibility: visible ;
+}
+.member-item:hover .member-name
+{
+   color: #FFF ;
+}
+.member-item:hover .member-jop
+{
+   color: #6195FF ;
+}
+.new
+{
+   background: #FAFAFA ;
+   width: 100% ;
+}
+
+.all-items
+{
+   overflow: hidden ;
+   padding-bottom: 50px ;
+}
+.new-item
+{
+   float: left ;
+   background: #FFF ;
+   width: 30% ;
+   margin: 10px ;
+}
+.new-item img
+{
+   width: 100% ;
+}
+.new-icons
+{
+   list-style: none ;
+  padding: 10px ;
+}
+.new-icons li
+{
+    display: inline;
+    padding: 8px ;
+}
+.new-item i
+{
+   color: #6195FF ;
+   margin: 4px ;
+}
+.new-item h3
+{
+    padding: 10px ;
+    font-weight: 600 ;
+}
+.new-item p
+{
+   color: #888;
+   padding: 10px ;
+}
+.new-item a
+{
+   text-decoration: none ;
+   color: #6195FF ;
+   padding: 10px ;
+}
+.touch-info
+{
+   
+}
+
+.info1
+{
+   width: 30% ;
+   float: left ;
+   text-align: center ;
+   margin-bottom: 50px ;
+}
+.info1 i{
+    color: #6195FF ;
+    padding: 10px ;
+}
+.info1 h3
+{
+   padding: 10px ;
+}
+.info1 span
+{
+   color: #888 ;
+}
+.form
+{
+   width: 60% ;
+   margin:  auto ;
+   text-align: center ;
+}
+.form button
+{
+   padding: 20px ;
+   margin: 10px ;
+   background: #6195FF ;
+   color: #FFF ;
+   border: 0 ;
+   width: 190px  ;
+   border-radius: 3px ;
+}
+.form div input,
+textarea
+{
+    width: 100% ;
+    height: 50px ;
+   float: left;
+    margin: 3px ;
+    margin-bottom: 7px ;
+    background: #FAFAFA ;
+    border: 0 ;
+    padding: 10px ;
+    color: #888 ;
+    border-radius: 3px ;
+}
+.form div:first-child input
+{
+   width: 49% ;
+   float: left;
+}
+
+.footer
+{
+   background: #1C1D21 ;
+   height: 400px ;
+   width: 100% ;
+   margin: auto ;
+   text-align: center ;
+}
+.footer-img
+{
+   padding-top: 80px ;
+}
+.footer-list
+{
+   list-style: none ;
+   margin: 20px ;
+   margin-bottom: 30px ;
+}
+.footer-list li
+{
+   display: inline-block ;
+   border-radius: 4px ;
+   background: #6195FF ;
+
+}
+.footer li > a
+{
+   display: block ;
+    color: #FFF ;
+    padding: 20px ;
+}
+.footer p
+{
+   text-transform: uppercase ;
+   color: #DDD ;
+}
+.footer p a
+{
+ text-decoration: none ;
+ color: #43619E
+}
+
+ 
