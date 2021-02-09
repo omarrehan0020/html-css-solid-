@@ -1,0 +1,264 @@
+body
+{
+ 
+    font-family: arial ;
+}
+
+video
+{
+    width: 100% ;
+    height: 600px ;
+    z-index: 1 ;
+    background: #000 ;
+   margin-bottom: 0 ;
+    
+}
+
+.header
+{
+    height: 600px ;
+    width: 100% ;
+   overflow: hidden ;
+    position: relative ;
+}
+.container
+{
+    width: 60% ;
+    height: 800px ;
+    margin: 00px auto ;
+    z-index: 2;
+    
+
+}
+.head
+{
+    position: absolute ;
+    top: 0  ;
+    left: 0 ;
+    width: 700px ; ;
+    text-align: center ;
+     width: 400px ;
+      background: rgba(0,0,0,.5) ;
+      padding-left: 600px ;
+      padding-right:  500px ;
+    
+}
+.head h3
+{
+   padding-top: 200px ;
+  
+    color: #FFF ;
+    font-size: 200% ;
+    font-family: arial ;
+    letter-spacing: 10px ;
+  
+}
+.head p
+{
+   padding-bottom: 400px ;
+}
+.semper
+{
+   background-image: url("../images/back.png") ;
+   background-size: cover ;
+    overflow: hidden ;
+    
+}
+.semper .first
+{
+    
+    margin-top: -20px ;
+    text-align: center ;
+    padding: 30px ;
+    padding-top: 70px ;
+}
+
+.imge > div
+{
+    height: 350px ;
+    width: 25% ;
+    float: left ;
+    background: #FFF  ;
+    margin: 20px ;
+    border-radius: 10px ;
+}
+.imge
+{
+    padding: 50px 100px  ;
+    margin-bottom: 50px ;
+    margin-top: -600px ;
+    margin-right: -200px ;
+    
+    text-align: center ;
+    
+}
+.imge h3
+{
+    color: #555 ;
+}
+.imge p
+{
+    padding: 0 20px ;
+}
+img
+{
+    
+    padding-top: 20% ;
+}
+.compony
+{
+    background-image: url("../images/company.jpg") ;
+    background-size: cover ;
+    height: 400px ;
+    width: 100% ;
+    
+}
+.compony .cont
+{
+    padding: 80px 80px ;
+    text-align: center ;
+}
+.cont h3,
+.bord h3
+{
+    color: #FFF ;
+    word-spacing: 4px ;
+    letter-spacing: 2px ;
+    padding: 10px ;
+}
+.bord h3,
+.semper h3
+{
+    color: #555 ;
+}
+.bord
+{
+    background-image: url("../images/back.png") ;
+   background-size: cover ;
+    overflow: hidden ;
+}
+.text
+{
+    text-align: center ;
+    width: 60% ;
+    margin-left: 20% ;
+    margin-top: 50px ;
+}
+.clear
+{
+    clear: both ;
+}
+.border
+{
+    
+    display: flex ;
+    flex-direction: row ;
+    flex-wrap: nowrap ;
+    justify-content: space-around ;
+    padding: 40px ;
+    
+}
+.border > div
+{
+    width:300px ;
+    height: 350px ;
+    background: #FFF ;
+    margin-bottom: 50px ;
+}
+.border div p:first-child
+{
+    margin-left: 50px ;
+    margin-top: 70px ;
+    border-left: solid 7px #CCC7C7 ;
+    padding: 10px 0px 10px 30px;
+}
+figure
+{
+    margin-top: -25px ;
+}
+figure img
+{
+    width: 60px ;
+    height: 60px ;
+    border-radius: 50% ;
+    
+}
+figure p
+{
+   margin-top: -50px ;
+   font-size: 80% ;
+  margin-left: 70px ;
+}
+figure p span
+{
+   color: red ;
+}
+.footer
+{
+   background: #282828;
+   width: 100% ;
+   height: 500px ;
+   overflow: hidden;
+   
+}
+.around
+{
+   margin: 100px ;
+   width: 1200px;
+   
+}
+.around .first
+{
+   width: 40% ;
+   float: left ;
+}
+.around .second
+{
+   width: 30% ;
+   float: left ;
+   margin-left: 30px ;
+}
+.around .second p:hover
+{
+   cursor: pointer ;
+   color: #B20E0E ;
+}
+.around .third
+{
+   width: 25% ;
+   float: left ;
+   margin-left: 30px ;
+   color: #888 ;
+   
+}
+.around h3
+{
+   color: #FFF ;
+   letter-spacing: 2px ;
+}
+.third a
+{
+   background: black;
+    text-decoration: none;
+    color: #DDD ;
+    width: 20px ;
+    height: 20px ;
+    text-align: center ;
+    padding: 6px ;
+    padding-top: 7px ;
+    
+    
+    margin: 10px ;
+    border-radius: 4px ;
+}
+.third a:hover
+{
+   opacity: .5 ;
+}
+
+p
+{
+    line-height: 1.7 ;
+    color: #888 ;
+    
+}
